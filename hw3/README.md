@@ -15,7 +15,7 @@ After correctly installing the libraries, one needs to run:
 `python test.py`
 The DNC will load a trained model of 30,000 iterations. Note that loading model only supports CPU. If you have a GPU-version tensorflow, you need to train the model again. To retrain the model, one just needs to run ``python train.py --iterations=XXXX``.
 ### Run the Script with Docker
-Type the following commands in your terminal to run (l003007 is my docker hub username):
+Type the following commands in your terminal to run (l003007 is my docker hub username):  
 ``docker pull l003007/python-dnc_babi``  
 ``docker run l003007/python-dnc_babi``  
 This will run the trained DNC model and test it on bAbI test set.
