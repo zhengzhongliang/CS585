@@ -18,9 +18,12 @@ The DNC will load a trained model of 30,000 iterations. Note that loading model 
 Just run the script by typing the command in ``run_docker.sh``.
 
 ## DNC Implementation on MNIST
-The code is folder "DNC_MNIST_docker". The code trains a DNC to reproduce MNIST hand-written digit. The experiment is described in detail in the appendix of the report.
+The code is in folder "DNC_MNIST_docker". The code trains a DNC to reproduce MNIST hand-written digit. The experiment is described in detail in the appendix of the report. Original code is from [here](https://github.com/llSourcell/differentiable_neural_computer_LIVE).
 
 Although I tried to wrap the code in docker, it hangs when I try to run it through docker (but with no error). If you want to run the script you will need to set up the environment yourself. The libraries are ``python 3.6``, ``numpy==1.12.0``, ``tensorflow==1.10.0``. The just type ``python DNC_MNIST.py``.
+
+## LSTM Implementation on MNIST
+The code is stored in "DNC_MNIST_docker" folder (but docker is not supported for this implementation), and the script name is "3_Normal_LSTM_MNIST.py". This implementation trains an LSTM to reproduce MNIST hand-written digit. The details of the experiment are provided in the appendix in the report. To run the script, just type ``python 3_Normal_LSTM_MNIST.py``.
 
 
 
