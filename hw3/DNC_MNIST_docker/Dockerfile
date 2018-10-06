@@ -1,0 +1,7 @@
+FROM python:3.6
+ADD DNC_MNIST.py /
+ADD mnist.npz / 
+RUN pip install numpy==1.12.0
+RUN pip install tensorflow==1.10.0
+CMD [ "python", "./DNC_MNIST.py" ]
+
